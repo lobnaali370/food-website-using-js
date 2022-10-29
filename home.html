@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    
+    <!-- loding screen -->
+    <div class="loading-screen bg-dark h-100 position-fixed" id="loading">
+        <div class="icon d-flex justify-content-center align-items-center  h-100">
+            <i class="fa-solid fa-spinner text-white fa-7x fa-spin"></i>
+        </div>
+    </div>
+
+
+<!-- side list -->
+    <div class="side  bg-black h-100 " id="black">
+        <button class="btn btn-link text-decoration-none p-3 " id="searchTag"> search</button>
+        <button class="btn btn-link text-decoration-none p-3" id="CategoriesTag">Categories </button>
+        <button class="btn btn-link text-decoration-none p-3" id="areaTag">Area </button>
+        <button class="btn btn-link text-decoration-none p-3" id="IngredientsTag">Ingredients</button>
+        <button class="btn btn-link text-decoration-none p-3" id="contact"> Contact Us</button>
+    </div>
+    <div class="side2 bg-white h-100 ">
+        <div class="icon d-flex align-items-center  h-100">
+            <i class="fa-solid fa-bars p-2 fa-2xl " id="list"></i>
+
+        </div>
+    </div>
+<!-- search -->
+
+    <div class="container p-3 ">
+        <div class="search" id="searchBox">
+            <input type="text" placeholder="search by name" class="p-3 name form-control bg-transparent m-2 text-white"
+                id="mealName">
+
+            <input type="text" placeholder="search by first litter"
+                class="p-3 form-control bg-transparent m-2 text-white" id="litter">
+
+        </div>
+    </div>
+
+
+    <!-- contact us -->
+
+    <div class="container p-3 submit w-50 my-5">
+        <h2 class="text-white p-2 text-center">ContacUs...</h2>
+        <div class="row p-2">
+            <div class="col-md-6">
+                <input type="text" placeholder="enter your name"
+                    class="p-3 name form-control bg-transparent m-2 text-white" id="Name">
+                <div class="alert bg-danger rounded-2 text-white d-none" id="alert1"></div>
+            </div>
+            <div class="col-md-6">
+                <input type="text" placeholder="enter your email" class="p-3 form-control bg-transparent m-2 text-white"
+                    id="email">
+                <div class="alert bg-danger rounded-2 text-white d-none" id="alert2"></div>
+            </div>
+        </div>
+        <div class="row p-2">
+            <div class="col-md-6">
+                <input type="text" placeholder="enter phone" class="p-3 name form-control bg-transparent m-2 text-white"
+                    id="phone">
+                <div class="alert bg-danger rounded-2 text-white d-none" id="alert3"></div>
+            </div>
+            <div class="col-md-6">
+                <input type="text" placeholder="enter age" class="p-3 name form-control bg-transparent m-2 text-white"
+                    id="age">
+                <div class="alert bg-danger rounded-2 text-white d-none" id="alert4"></div>
+            </div>
+        </div>
+        <div class="row p-2">
+            <div class="col-md-6">
+                <input type="text" placeholder="enter password"
+                    class="p-3 name form-control bg-transparent m-2 text-white" id="password">
+                <div class="alert bg-danger rounded-2 text-white d-none" id="alert5"></div>
+            </div>
+            <div class="col-md-6">
+                <input type="text" placeholder="enter repassword"
+                    class="p-3 name form-control bg-transparent m-2 text-white" id="repassword">
+                <div class="alert bg-danger rounded-2 text-white d-none" id="alert6"></div>
+            </div>
+        </div>
+        <div class="row justify-items-center">
+            <div class="col-md-12 ">
+                <button type="button" class="btn btn-outline-danger btn-lg" id="submitBtn" disabled>submit</button>
+            </div>
+
+        </div>
+    </div>
+
+
+<!-- main display -->
+    <div class="container">
+        <div class="row p-2 m-3 text-white " id="ROW">
+
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/main2.js"></script>
+
+</body>
+
+</html>
